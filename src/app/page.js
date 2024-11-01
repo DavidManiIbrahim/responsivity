@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Head from 'next/head';
 import styles from './/styles/Home.module.css';
 import Works from './components/works.js'
+import Benefits from './components/Benefits.js'
+import Feature from './components/Feature.js'
 
 export default function Home() {
   return (
@@ -35,7 +37,7 @@ export default function Home() {
           </div>
           <div className={styles.textContent}>
             <h2>Ensuring <span className={styles.highlight}>Transparency</span> and <span className={styles.highlight}>Efficient</span> Aid Distribution in Nigeria</h2>
-            <p>Ensuring that aid reaches those who need it the most with blockchain.</p>
+            <p>Ensuring that aid reaches those who need it the most with blockchain based humanitarian aid</p>
             <div className={styles.buttonGroup}>
               <button className={styles.getStartedButton}>Get Started</button>
               <button className={styles.learnMoreButton}>Learn More</button>
@@ -44,6 +46,8 @@ export default function Home() {
         </section>
       </main>
       <Works />
+      <Benefits />
+      <Feature />
     </div>
   );
 }
